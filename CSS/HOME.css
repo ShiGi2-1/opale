@@ -1,0 +1,305 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family:'Courier New', sans-serif ;
+}
+.menu-deroulant-or, .menu-deroulant-argent,
+.menu-deroulant-collections, .menu-deroulant-apropos{
+    margin-top: 35px;
+}
+.menu-deroulant-collections {
+    background-color: #32b997;
+    height: 46px;
+    width: 300px;
+    text-align: center;
+    border: solid 3px black;
+    border-bottom: none;
+}
+
+.photo_top_cameleon{
+    min-width: 100%;
+    max-height: 800px;
+    position:relative ;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    object-position: top;
+    top: 62px;
+}
+
+.photo_top_green{
+    min-width: 100%;
+    max-height: 800px;
+    position:relative ;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    object-position: center;
+
+}
+/* .green{
+    position: absolute;
+    left: 50%;
+    top: 380px;
+    transform: translate(-56.2%,0%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(119, 202, 181);
+    border-bottom: solid 4px rgb(119, 202, 181);
+    border-bottom-right-radius: 20px;
+    letter-spacing: 9px;
+} */
+.came{
+    /* background-color: #32b997; */
+    position: absolute;
+    left: 52%;
+    top: 380px;
+    transform: translate(-56.2%,0%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: black;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    border-bottom-right-radius: 10px;
+    letter-spacing: 5px;
+}
+.text{
+    margin-top: 120px;
+    margin-left: 50px;
+}
+.text h1 {
+    font-family: 'Dancing Script', cursive;
+}
+.text > p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.front{
+    position: relative;
+}
+.back{
+    position: absolute;
+}
+.article img{
+    transition: 1s ease-in-out;
+    z-index: 3;
+    border: solid 2px black;
+}
+.article img.front:hover{
+    opacity: 0;
+    cursor: pointer;
+} 
+.contaner{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 100px;
+}
+
+.article{
+    width: 354px;
+    height: 426px;
+}
+.article a{
+    margin-top: 100%;
+}
+button{
+    height: 70px;
+    width: 354px;
+    background-color: #F6D2A8;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+button:hover{
+    background-color: #32b997;
+    color: bisque;
+}
+.div_top{
+    height: 700px;
+    max-width: 100%;
+    position: relative;
+}
+
+.photo_top_pierrenoir{
+    min-width: 100%;
+    max-height: 800px;
+    position:relative ;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.photo_top_lettredamour{
+    min-width: 100%;
+    max-height: 800px;
+    position:relative ;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* test */
+
+
+/* CSS pour les appareils mobiles */
+@media screen and (max-width: 768px) {
+    /* Ajoutez vos styles pour les écrans de largeur maximale de 768px */
+    /* Par exemple, vous pouvez réorganiser les éléments pour qu'ils s'affichent correctement sur de petits écrans */
+}
+
+/* CSS pour les tablettes */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Ajoutez vos styles pour les écrans de largeur comprise entre 768px et 1024px */
+}
+
+/* CSS pour les écrans d'ordinateur de bureau */
+@media screen and (min-width: 1024px) {
+    /* Ajoutez vos styles pour les écrans de largeur supérieure ou égale à 1024px */
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .photo {
+        flex-direction: column;
+    }
+
+    .article {
+        order: 2; /* Déplace les images après les boutons */
+        width: 100%;
+        max-width: 354px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        order: 1; /* Déplace les boutons avant les images */
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* test */
+
+
+
+.photo{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.article img{
+    width: 260px;
+    height: 320px;
+    border: solid 2px black;
+}
+.Anneau-front{
+    position: relative;
+}
+.Anneau-back{
+    position: absolute;
+}
+.article img{
+    transition: 1s ease-in-out;
+    z-index: 3;
+}
+.article img.Anneau-front:hover{
+    opacity: 0;
+    cursor: pointer;
+} 
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    width: 264px;
+    height: 50px;
+    background-color: #8DDBC7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+button:hover {
+    background-color: #4bc7a8;
+    cursor: pointer;
+    color: bisque;
+}
+
+section{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;    
+}
+.article{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+.button_article{
+    display: flex;
+    flex-direction: row;
+}
+.button_panier button{
+    width: 180px;
+}
+.button_favori button{
+    width: 82px;
+    font-size: xx-large;
+}
+.image_article{
+    position: relative;
+}
+.prix{
+    position: absolute;
+    font-size: xx-large;
+    height: 40px;
+    width: 260px;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    text-align: center;
+    z-index: 98;
+    border-left: black 2px solid;
+    border-bottom: 0;
+    bottom: 0;
+}
+

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', sans-serif;
+}
+
+main {
+    background-color: antiquewhite;
+    max-width: 100%;
+    height: 1500px;
+}
+
+main >section{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-left{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    max-width: 52%;
+}
+
+.row-1, .row-2, .row-3{
+    display: flex;
+    flex-direction: row;
+}
+.container1{
+    height: 1500px;
+    width: 1000px;
+    position: relative;
+    margin-top: 115px;
+    max-height: 1349px;
+    max-width: 50%;
+}
+.row-right{
+    position: fixed;
+    height: 400px;
+    margin-top: 15px;
+    max-width: 40%;
+    right: 10%;
+    background-color: antiquewhite;
+
+}
+.row-right .nom-bijou,
+.prix-bijou, .button, .check-box {
+    margin-bottom: 25px;
+}
+
+.onglets{
+    display: flex;
+    flex-direction: column;
+}
+.tab{
+    display: flex;
+    flex-direction: row;
+}
+.buttom-nombre{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(122, 122, 122);
+    border: none;
+    margin-right: 20px;
+}
+button:hover{
+    background-color: rgb(101, 101, 101);
+    color: bisque;
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(101, 101, 101);
+    color: bisque;
+    cursor: pointer;
+}
+button  a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nombre {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 13px;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h3{
+    margin-right: 151px;
+}
+.discription p{
+    display: none;
+}
+.details p{
+    visibility: hidden;
+}
+.soins p{
+    visibility: hidden; 
+}
+.soins{
+    width: 400px;
+    height: 300px;
+    z-index: 1;
+}
+.details{
+    z-index: 2;
+}
+.discription{
+    z-index: 3;
+}
+.discription > h3:after{
+    font-size: 15px;
+    margin-left: 17px;
+    display: inline-block;
+    
+}
+.discription > ul > li:hover > p{
+    color: rgb(32, 33, 33);
+
+}
+
+
+
+
+
+
+@keyframes rotationfleche{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: 90deg;
+    }
+}
+.discription:hover > h3:after{
+    animation: rotationfleche 0.2 linear forwards;
+}
+@keyframes apparitionsousmenu{
+    0%{
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0,);
+        /* border: 3px solid rgb(0, 0, 0); */
+    }
+    30%{
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0,);
+    }
+    100%{
+        max-height: 50em;
+        /* border: 3px solid rgb(0, 0, 0); */
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0,);
+    }
+}
+.discription:hover > ul{
+    animation: apparitionsousmenu 1s forwards;
+}
+
+ul > li:hover{
+    background-color:  #FFF7CD;
+    border: black;
+}
+ul > li:hover > p{
+    color: white;
+    border: black;
+}
+  
+img{
+    padding: 15px;
+    max-width: 300;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    margin-right: 5px;
+    background-color: white;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: bisque;
+}

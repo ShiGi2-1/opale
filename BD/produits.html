@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+  <html lang="fr">
+  
+       <head>
+	   <meta name = "viewport" content = "width = divice-width, initial-scale=1.0">
+	   <title> Formulaire Client </title>
+	   <style>
+	   body {
+	       font-family : Arial, sans-serif;
+		   background-color : #f4f4f4;
+		   margin : 0;
+		   padding : 0;
+	    }
+		.conteniare {
+		     max-width : 500px;
+			 margin : 50px auto;
+			 background-color : #fff;
+			 padding : 20px;
+			 border-radius : 8px;
+			 box-shadow : 0 0 10px rgba(0,0,0,0.1);
+		}
+	   h2 {
+	      text-align : center;
+		  margin-bottom : 20px;
+		  color : orange;
+	    }
+		
+		input[type = "text"] {
+		      width : 150px;
+			  padding : 10px;
+			  margin-bottom : 15px;
+			  border : 1px solid #ccc;
+			  border-radius : 4px;
+			  box-slzing : border-box;
+			  margin-left : 15px;
+		}
+		
+		input[type = "submit"] {
+		
+		        background-color : orange;
+			   color : white;
+			   padding : 10px 20px;
+			    border : none;
+			   border-radius : 4px;
+			    cursor : pointer;
+			   width : 100%;
+		}
+		input[type = "submit"]:hover {
+		
+		    background-color : red;
+		
+		}
+		.group{
+		display : flex;
+		margin-bottom : 15px;
+		}
+		
+		.group label {
+		   width : 150px;
+		   padding-right: 10px;
+		   text-align : right;
+		}
+		
+		.group input {
+		  flex : 1px;
+		  border : 1px solid #ccc;
+		  padding : 10px;
+		  border-radius : 4px;
+		  box-slzing : border-box;
+		
+		}
+		
+	   
+	   </style>
+    
+       </head>
+	   
+       <body>
+             <div class = "conteniare">
+			 
+			 <h2> Formulaire Produits L'opale </h2>
+			 <form action = "./config/commande.php" method = "post">
+			 <div class = "group">
+			<label for = "codeprod"> Code du Produit : </label>
+			<input type = "text" id = "codeprod" name = "codeprod" required>
+			</div>		
+	
+			  <div class = "group">
+			  <label for = "libelleprod"> Libellé : </label>
+			  <input type = "text" id = "libelleprod" name = "libelleprod" required>
+			  </div>
+			  <div class = "group">
+			  <label for = "Prix"> Prix : </label>
+			  <input type = "text" id = "Prix" name = "Prix" required>
+			  </div>
+			  <div class = "group">
+			  <label for = "stockdispo"> Stock : </label>
+			  <input type = "text" id = "stockdispo" name = "stockdispo" required>
+			  </div>
+			  <div class = "group">
+			  <input type = "submit" value = "Enregistrer">
+			  </div>
+			  
+			  
+			  
+			 </form>
+			 
+			 </div>
+			 
+
+       </body>
+  </html>

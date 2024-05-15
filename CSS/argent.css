@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Courier New', sans-serif;
+}
+.menu-deroulant-or, .menu-deroulant-argent,
+.menu-deroulant-collections, .menu-deroulant-apropos{
+    margin-top: 35px;
+}
+.menu-deroulant-argent {
+    background-color: #32b997;
+    height: 46px;
+    width: 300px;
+    text-align: center;
+    border: solid 3px black;
+    border-bottom: none;
+}
+.logo{
+    width: 350px;
+    margin-top: -1px;
+}
+main{
+    height: 2500px;
+    max-width: 100%;
+}
+.titre1{
+    visibility: hidden;
+}
+.titre h1{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.titre p{
+    margin-left: 40px;
+}
+.filtre{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+}
+.filtre > div{
+    text-align: center;
+    width: 200px;
+    height: 60px;
+}
+.filtrer{
+    border-right: solid black 1px;
+}
+.trier{
+    border-left: solid black 1px;
+}
+.container-0{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.article img{
+    width: 260px;
+    height: 320px;
+    border: solid 2px black;
+}
+.Anneau-front{
+    position: relative;
+}
+.Anneau-back{
+    position: absolute;
+}
+.article img{
+    transition: 1s ease-in-out;
+    z-index: 3;
+}
+.article img.Anneau-front:hover{
+    opacity: 0;
+    cursor: pointer;
+} 
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    width: 264px;
+    height: 50px;
+    background-color: #8DDBC7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+button:hover {
+    background-color: #4bc7a8;
+    cursor: pointer;
+    color: bisque;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.Anneau-front {
+    position: relative;
+}
+
+.Anneau-back {
+    position: absolute;
+}
+
+.article img {
+    transition: 1s ease-in-out;
+    z-index: 3;
+}
+
+.article img.Anneau-front:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contaner {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.article {
+    width: 350px;
+    height: 426px;
+}
+
+.article a {
+    margin-top: 100%;
+}
+
+button {
+    height: 70px;
+    width: 350px;
+    background-color: bisque;
+    color: black;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 120px;
+} */
