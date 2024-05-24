@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Dancing Script', cursive;
 }
+.btn_deco{
+    background-color: red;
+}
 .menu-deroulant-or, .menu-deroulant-argent,
 .menu-deroulant-collections, .menu-deroulant-apropos{
     margin-top: 35px;
@@ -165,66 +168,3 @@ section{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* .photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 0px;
-}
-
-.Anneau-front {
-    position: relative;
-}
-
-.Anneau-back {
-    position: absolute;
-}
-
-.article img {
-    transition: 1s ease-in-out;
-    z-index: 3;
-}
-
-.article img.Anneau-front:hover {
-    opacity: 0;
-    cursor: pointer;
-}
-
-.contaner {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-.article {
-    width: 350px;
-    height: 426px;
-}
-
-.article a {
-    margin-top: 100%;
-}
-
-button {
-    height: 70px;
-    width: 350px;
-    background-color: bisque;
-    color: black;
-}
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 120px;
-} */

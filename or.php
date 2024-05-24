@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <html lang="en">
 
 <head>
@@ -28,8 +26,19 @@ session_start();
 <body>
     <!-- begin section: annonces barre -->
     <header>
-        <p> Livraison internationale gratuite de plus de 100 $</p>
-        <p> Livraison gratuite en France à partir de 50 $</p>
+        <?php
+            session_start();
+                // Vérifiez si l'utilisateur est connecté
+                if (!isset($_SESSION['user_email'])) {
+                // Redirigez vers la page de connexion si l'utilisateur n'est pas connecté
+                header("Location: connect.php");
+                exit;
+            }
+            // Récupérez l'e-mail de l'utilisateur à partir de la session
+            $user_email = $_SESSION['user_email'];
+            echo $user_email;
+        ?>
+        <button class="btn_deco">Déconnecter</button>
     </header>
     <!-- end section: annonces barre -->
     <!-- <header> -->
@@ -37,7 +46,7 @@ session_start();
 
             <!-- <div class="menu-deroulant-container"> -->
             <!-- begin section: logo -->
-            <div class="logo"> <a href="./HOME.html"><img src="./IMG/logos/logo bisque.png" alt="l'opale"></a> </div>
+            <div class="logo"> <a href="HOME.php"><img src="./IMG/logos/logo bisque.png" alt="l'opale"></a> </div>
             <!-- <div class="logo"> <a href="../HTML/HOME.html"> L’OPALE</a> </div> -->
             <!-- end section: logo -->
             <!-- brgin section: drop down bar -->
@@ -54,17 +63,17 @@ session_start();
                     </ul>
                 </div>
                 <!--  ▼ section drop down barre, botton "Collections" -->
-                <div class="menu-deroulant-collections"><a href="./HOME.html">Collections</a>
+                <div class="menu-deroulant-collections"><a href="HOME.php">Collections</a>
                     <ul class="sous-menu">
                         <!-- <li> <a href="#"> A croquer</a></li>  -->
-                        <li> <a href="./HOME.html#cameleon"> Caméléon</a></li>
-                        <li> <a href="./HOME.html#lettre"> Lettre d'amour</a></li>
-                        <li> <a href="./HOME.html#pierre"> La pierre noir</a></li>
-                        <li> <a href="./HOME.html#green"> Green </a></li>
+                        <li> <a href="HOME.php#cameleon"> Caméléon</a></li>
+                        <li> <a href="HOME.php#lettre"> Lettre d'amour</a></li>
+                        <li> <a href="HOME.php#pierre"> La pierre noir</a></li>
+                        <li> <a href="HOME.php#green"> Green </a></li>
                     </ul>
                 </div>
                 <!--  ▼ section drop down barre, botton "A propos" -->
-                <div class="menu-deroulant-apropos"><a href="./ABOUT.html">A propos</a></div>
+                <div class="menu-deroulant-apropos"><a href="ABOUT.php">A propos</a></div>
             </div>
             <!-- end section: drop down bar -->
             <div class="icones">
@@ -72,7 +81,7 @@ session_start();
                     <input type="search" placeholder="Rechercher">
                 </div>
                 <div class="recherche"> <a href="#"> <img src="./IMG/logos/recherche.png" alt="recherche"> </a></div>
-                <div class="profil"> <a href="./connect.html"> <img src="./IMG/logos/profil.png" alt="profil"> </a> </div>
+                <div class="profil"> <a href="connect.php"> <img src="./IMG/logos/profil.png" alt="profil"> </a> </div>
                 <a href="panier.php"> <img src="./IMG/logos/panier.png" alt="panier"></a>
                 
             </div>

@@ -28,10 +28,50 @@ session_start();
 
 <body>
     <!-- begin section: annonces barre -->
-    <header>
-        <p> Livraison internationale gratuite de plus de 100 $</p>
-        <p> Livraison gratuite en France à partir de 50 $</p>
-    </header>
+        <Nav>
+
+            <!-- <div class="menu-deroulant-container"> -->
+            <!-- begin section: logo -->
+            <div class="logo"> <a href="HOME.php"><img src="./IMG/logos/logo bisque.png" alt="l'opale"></a> </div>
+            <!-- <div class="logo"> <a href="../HTML/HOME.html"> L’OPALE</a> </div> -->
+            <!-- end section: logo -->
+            <!-- brgin section: drop down bar -->
+            <!-- ▼ section drope down bottons -->
+            <div class="ongles ">
+                <!--  ▼ section drop down barre, botton "or" -->
+                <div class="menu-deroulant-or"><a href="or.php"> Catalogues </a>
+                    <ul class="sous-menu">
+                        <li> <a href="or.php">Tous</a></li>
+                        <li> <a href="Colies.php"> Collies</a></li>
+                        <li> <a href="Anneaux.php">Anneaux</a></li>
+                        <li class="sous-menu-or-boucles-doreilles"> <a href="Boucles d'oreilles.php"> Boucles d'oreilles</a></li>
+                        <li> <a href="Bracelets.php"> Bracelets</a></li>
+                    </ul>
+                </div>
+                <!--  ▼ section drop down barre, botton "Collections" -->
+                <div class="menu-deroulant-collections"><a href="HOME.php">Collections</a>
+                    <ul class="sous-menu">
+                        <!-- <li> <a href="#"> A croquer</a></li>  -->
+                        <li> <a href="HOME.php#cameleon"> Caméléon</a></li>
+                        <li> <a href="HOME.php#lettre"> Lettre d'amour</a></li>
+                        <li> <a href="HOME.php#pierre"> La pierre noir</a></li>
+                        <li> <a href="HOME.php#green"> Green </a></li>
+                    </ul>
+                </div>
+                <!--  ▼ section drop down barre, botton "A propos" -->
+                <div class="menu-deroulant-apropos"><a href="ABOUT.php">A propos</a></div>
+            </div>
+            <!-- end section: drop down bar -->
+            <div class="icones">
+                <div class="search">
+                    <input type="search" placeholder="Rechercher">
+                </div>
+                <div class="recherche"> <a href="#"> <img src="./IMG/logos/recherche.png" alt="recherche"> </a></div>
+                <div class="profil"> <a href="connect.php"> <img src="./IMG/logos/profil.png" alt="profil"> </a> </div>
+                <a href="PANIER.php"> <img src="./IMG/logos/panier.png" alt="panier"></a>
+                
+            </div>
+        </Nav>
     <!-- end section: annonces barre -->
     <!-- <header> -->
         <Nav>
@@ -73,7 +113,7 @@ session_start();
                     <input type="search" placeholder="Rechercher">
                 </div>
                 <div class="recherche"> <a href="#"> <img src="./IMG/logos/recherche.png" alt="recherche"> </a></div>
-                <div class="profil"> <a href="./connect.html"> <img src="./IMG/logos/profil.png" alt="profil"> </a> </div>
+                <div class="profil"> <a href="connect.php"> <img src="./IMG/logos/profil.png" alt="profil"> </a> </div>
                 <a href="PANIER.php"> <img src="./IMG/logos/panier.png" alt="panier"></a>
                 
             </div>

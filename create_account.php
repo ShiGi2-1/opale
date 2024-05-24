@@ -11,24 +11,24 @@
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $id_clt = 3;
         $nom = $_POST['nom'];
         $prenom = $_POST['prenom'];
         $tel = $_POST['telephone'];
         $email = $_POST['email'];
         $motdepasse = $_POST['mdp'];
         // Préparation de la requête SQL
-        $req = $connexion->prepare("INSERT INTO client(mail_clt, nom_clt, prenom_clt, tel_clt, passeword) VALUES (?,?,?,?,?)");
+        $req = $connexion->prepare("INSERT INTO client(nom_clt, prenom_clt, tel_clt, mail_clt, passeword) VALUES (?,?,?,?,?)");
         // Vérification de la préparation de la requête
         if ($req === false) {
             die("Échec de la préparation de la requête: " . $connexion->error);
         }
         // Liaison des paramètres
-        $req->bind_param("sssss",$email , $nom, $prenom, $tel, $motdepasse);
+        $req->bind_param("sssss", $nom, $prenom, $tel, $email, $motdepasse);
 
         // Exécution de la requête
         if($req->execute()){
-            echo "Enregistrement effectué";
+            header("Location: connect.php");
+        exit;
         } else {
             echo "Échec de l'enregistrement: " . $req->error;
         }
